@@ -3,9 +3,12 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-content:space-around;
+    padding: 2rem;
 }
 .inner{
-    background-color:blue;
-    width:40%;
+    background-color:white;
+    width:48%;
     height:40%;
+    border-radius: 0.5rem;
+    border: 0.1rem solid black;
 }
