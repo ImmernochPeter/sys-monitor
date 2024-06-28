@@ -1,0 +1,61 @@
+{
+    "editor.formatOnSave": true,
+    //"python.defaultInterpreterPath": ".env/bin/python",
+    "black-formatter.args": [
+        "--line-length",
+        "79",
+    ],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "editor.rulers": [
+        80
+    ],
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "pylint.severity": {
+        "convention": "Error",
+        "error": "Error",
+        "fatal": "Error",
+        "refactor": "Error",
+        "warning": "Error",
+        "info": "Error",
+        "line-too-long": "Information"
+    },
+    "pylint.args": [
+        "--django-settings-module=self_service_portal.settings.test",
+        "--load-plugins",
+        "pylint_django,pylint_pydantic",
+    ],
+    "mypy-type-checker.args": [],
+    "isort.args": [
+        "--profile",
+        "black"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./apps",
+        "-p",
+        "test_*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter",
+    },
+    "python.analysis.ignore": [
+        "*"
+    ],
+    "pythonDocstringGenerator.docstringFormat": "google",
+    "autoDocstring.docstringFormat": "google-notypes",
+    "flake8.args": [
+        "--max-line-length=79",
+        "--extend-ignore=E501" // Hier wird line-too-long ignoriert
+    ],
+}
