@@ -1,14 +1,65 @@
-.content{
-    display:flex;
+.content {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-content:space-around;
+    align-content: space-around;
     padding: 2rem;
 }
-.inner{
-    background-color:white;
-    width:48%;
-    height:40%;
+
+.inner {
+    background-color: white;
+    width: 48%;
+    height: 40%;
     border-radius: 0.5rem;
     border: 0.1rem solid black;
+}
+
+.base-naviga {
+    background-color: rgb(19, 54, 106);
+    display: flex;
+    float: left;
+    height: 4rem;
+    z-index: 2;
+}
+
+.nav-top-div {
+    width: 20%;
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.nav-rig-div {
+    width: 20%;
+    float: right;
+    background-color: rgb(19, 54, 106);
+    padding-right: 1.5rem;
+    font-size: 2rem;
+    text-align: right;
+    z-index: 2;
+}
+
+.nav-central-div {
+    width: 60%;
+}
+
+.fat-span {
+    font-size: 2.5rem;
+}
+
+.nav-dropdown {
+    position: absolute;
+    width: 20%;
+    left: 80%;
+    background-color: rgb(144, 144, 144);
+    padding-top: 4rem;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.dropdown-elem {
+    height: 2rem;
+}
+
+.dropdown-elem:hover {
+    background-color: azure;
 }
