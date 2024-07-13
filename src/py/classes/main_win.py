@@ -17,3 +17,6 @@ class MainWindow:
         """builds the winwow"""
 
         start(template, size=(width, len))
+
+    def set_title(self, title: str) -> None:
+        """sets title"""

@@ -32,9 +32,9 @@
     width: 20%;
     float: right;
     background-color: rgb(19, 54, 106);
-    padding-right: 1.5rem;
+    padding-left: 1rem;
     font-size: 2rem;
-    text-align: right;
+    text-align: left;
     z-index: 2;
 }
 
@@ -54,12 +54,28 @@
     padding-top: 4rem;
     z-index: 1;
     visibility: hidden;
+    border-radius: 0 0 0 1rem;
 }
 
 .dropdown-elem {
-    height: 2rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    font-size: 1.5rem;
 }
 
 .dropdown-elem:hover {
     background-color: azure;
+}
+
+.index-box {
+    display: flex;
+    padding-top: 4rem;
+}
+
+.news-box {
+    width: 50%;
+}
+
+.desc-box {
+    width: 50%;
 }
